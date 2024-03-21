@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NetSuite Search Export</title>
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  </head>
+  <body style="width: 300px; padding: 10px; ">
+    <h1><span class="badge bg-secondary w-100">NetSuite Field Finder</span></h1>
+    <form id="settings">
+    <div class="form-check mw-100 pb-2">
+    <p>Export your saved searches to Suitescript.</p>
+	<p>For NetSuite developers who want to export saved searches for use in their code.<br><br>
+	Supports SS1.0 and SS2.X.<br><br>
+	From the "Edit" mode of a Saved Search in NetSuite, click the "Export as SuiteScript".<br><br>
+	Please note that your search must be saved before it can be exported.<br><br>
+	**Some search types are not supported.</p>
+    </div>
+    <div id="myToast" class="toast align-items-center text-white bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+          You must save the search before attempting to export.
+        </div>
+      </div>
+    </div>
+    </form>
+    <script src="bootstrap/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="scripts/popup.js"></script>
+  </body>
+</html>
